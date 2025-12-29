@@ -14,7 +14,7 @@ input {
 .app {
   max-width: 1200px;
   width: 600px;
-  height: 200px;
+  height: 400px;
   margin: 60px auto;
   padding: 20px;
   background-color: #fff;
@@ -33,6 +33,7 @@ button {
   padding: 10px 20px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  margin: 5px;
 }
 button:disabled {
   cursor: not-allowed;
@@ -71,6 +72,7 @@ textarea:focus {
   font-size: 24px;
   font-weight: bold;
   margin-top: 5px;
+  color: red;
 }
 .expenseItem {
   display: flex;
