@@ -14,7 +14,7 @@ input {
 .app {
   max-width: 1200px;
   width: 600px;
-  height: 200px;
+  height: 400px;
   margin: 60px auto;
   padding: 20px;
   background-color: #fff;
@@ -71,6 +71,7 @@ textarea:focus {
   font-size: 24px;
   font-weight: bold;
   margin-top: 5px;
+  color: red;
 }
 .expenseItem {
   display: flex;
