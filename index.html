@@ -4,17 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expense Tracker</title>
+    <!-- halutessasi oma CSS-tiedosto -->
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div id="app" class="app">
       <h1>Expense Tracker</h1>
-      <input type="text" id="desInput" placeholder="Enter expense" />
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by description..."
+      />
+      <!-- Lomake: selite + summa + nappi -->
+      <input
+        type="text"
+        id="desInput"
+        placeholder="Enter expense description"
+      />
       <input type="number" id="amountInput" placeholder="Enter amount" />
       <button id="addExpenseBtn">Add Expense</button>
-      <div id="totalExpense" class="totalExpense">Total Expense: $0</div>
+
+      <!-- Haku selitteen mukaan -->
+      <div class="controls">
+        <!-- Filtterinapit -->
+        <button id="showAllExpenses">Show All</button>
+        <button id="showOver50">Over 50 €</button>
+      </div>
+
+      <!-- Yhteissumma -->
+      <div id="totalExpense" class="totalExpense">yhteensä: 0 €</div>
+
+      <!-- Lista, johon kulut piirretään -->
       <ul id="expenseList"></ul>
     </div>
+
+    <!-- JavaScript-tiedosto -->
     <script src="app.js"></script>
   </body>
 </html>
